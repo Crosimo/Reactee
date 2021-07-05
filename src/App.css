@@ -2,10 +2,21 @@
 .back{
 
   background-image: url("./components/pexels-fauxels-3182773.jpg");
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right top;
+  background-position:  top ;
   height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.carre{
+  background-color: #ad2d24cb;
+ width: 50%;
+ border-radius: 15px;
+ margin-left: 25%;
+ box-shadow: 1px 1px 1px 2px;
+
 }
 
 .manageDisplay{
@@ -14,11 +25,12 @@ justify-content: center;
 text-align: center;
 }
 .manage{
-  margin-top: 5%;
   color: white;
   font-size: 60px;
   text-decoration: underline;
   text-shadow: 1px 2px black;
+  font-family: Dosis;
+  
 
   
 }
@@ -33,6 +45,7 @@ text-align: center;
   align-items: center;
   margin-left: 25%;
   font-size: 20px;
+  font-family: Dosis;
 }
 
 .displayP{
@@ -45,6 +58,9 @@ text-align: center;
 .displayBtn{
   display: flex;
   justify-content: center;
+  font-family: Dosis;
+  font-weight: bolder;
+
 
 }
 
@@ -53,12 +69,15 @@ text-align: center;
   padding: 5px;
   border-radius: 5px;
   margin-top: 1%;
+  margin-bottom: 5%;
 
 }
 /* Footer */
 
 .footer{
   background-color: #540804;
+  font-family: Dosis;
+
   
   
 }

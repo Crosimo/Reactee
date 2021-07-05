@@ -7,6 +7,8 @@ export default class Accueil extends Component {
                 
                 <div className="back">
             
+                <div className="carre">
+
 
                 <div className="manageDisplay">
 
@@ -38,6 +40,19 @@ export default class Accueil extends Component {
                 </div>
 
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
             </div>
         )
     }
