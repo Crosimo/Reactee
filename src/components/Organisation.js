@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
 class Organisatiion extends Component {
+
+
    
     render() {
         console.log(this.props.myInputs);
@@ -18,7 +20,7 @@ class Organisatiion extends Component {
                     <th>Age</th>
                   </tr>
             {
-                this.props.myInputs.map((element) => {
+                JSON.parse(localStorage.getItem("tableau")).map((element) => {
                     console.log(element);
                     return (
                 <React.Fragment >

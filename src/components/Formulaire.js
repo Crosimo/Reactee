@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import classes from "./Formulaire.module.css"
 import Organisatiion from './Organisation';
+
+
 class Formulaire extends Component {
+
+
+
     state = {
       
         myInputUsername: "",
@@ -26,6 +31,7 @@ class Formulaire extends Component {
     submitter(e) {
        console.log("okay");
         this.myInputsTogether.push(this.state)
+        localStorage.setItem("tableau", JSON.stringify(this.myInputsTogether))
         this.setState((prev) => {
             return {
                 ...prev,
@@ -64,7 +70,7 @@ class Formulaire extends Component {
                             <input onInput={(e) => {
                                 this.inputRenderer("myInputHourEnd", e.target.value)
                             }} className ={classes.myInput} type="time" ></input>
-                            <button type= "submit" className ={classes.myButton}>Submit</button>
+                            <button onClick="setData()" type= "submit" className ={classes.myButton}>Submit</button>
                         </div>
                     </div>
                     
