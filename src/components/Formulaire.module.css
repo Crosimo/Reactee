@@ -1,0 +1,29 @@
+.contenant{
+   display: flex; 
+  align-items: center;
+   width: 80%;
+   height: 15rem;
+    justify-content: center;
+    background-color: red;
+}
+.contenu{
+ width : 20%;
+ height: 50%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+.myInput{
+    width: 10rem;
+}
+.myLabel{
+    color: white;
+}
+.myButton{
+   background-color: #AD2E24 ; 
+   border: none;
+   width: 50%;
+   padding: 0.25rem;
+   color: white;
+}

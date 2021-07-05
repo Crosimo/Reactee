@@ -1,0 +1,46 @@
+.laSection{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #540804;
+}
+.contenant{
+    width: 30%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 13rem;
+
+}
+.lesInputs{
+    height: 3rem;
+    background-color: #F1F1F1;
+    border: none;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.leButton{
+    height: 3rem;
+    color: white;
+    border: none;
+}
+.leButtonGrey{
+background-color: grey;
+}
+.leButtonRed{
+background-color: #AD2E24;
+}
+.leButton:active{
+    background-color: #540804;
+  
+}
