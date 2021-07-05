@@ -7,6 +7,7 @@ class Formulaire extends Component {
         myInputUsername: "",
         myInputTaskname: "",
         myInputDate: "",
+        myInputDateEnd: "",
         myInputHourStart: "",
         myInputHourEnd: "",
         
@@ -50,12 +51,16 @@ class Formulaire extends Component {
                             <input onInput={(e) => {
                                 this.inputRenderer("myInputTaskname", e.target.value)
                             }}  className ={classes.myInput} type="text" placeholder="Task"></input>
-                            <label className={classes.myLabel}>Date</label>
+                            <label className={classes.myLabel}>Date Start</label>
                             <input onInput={(e) => {
                                 this.inputRenderer("myInputDate", e.target.value)
                             }} className ={classes.myInput} type="date" ></input>
                         </div>
-                        <div className={classes.contenu}>
+                            <div className={classes.contenu}>
+                            <label className={classes.myLabel}>Date End</label>
+                            <input onInput={(e) => {
+                                this.inputRenderer("myInputDateEnd", e.target.value)
+                            }} className ={classes.myInput} type="date" ></input>
                             <label className={classes.myLabel}>Starting Hour</label>
                             <input onInput={(e) => {
                                 this.inputRenderer("myInputHourStart", e.target.value)
@@ -65,7 +70,8 @@ class Formulaire extends Component {
                                 this.inputRenderer("myInputHourEnd", e.target.value)
                             }} className ={classes.myInput} type="time" ></input>
                             <button type= "submit" className ={classes.myButton}>Submit</button>
-                        </div>
+                            </div>
+                            
                     </div>
                     
                 </form>
