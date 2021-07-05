@@ -9,7 +9,20 @@
   justify-content: space-around;
   color: grey;
   padding: 20px;
+
+ 
+
   
+}
+
+i{
+  cursor: pointer;
+
+}
+
+p{
+  cursor: pointer;
+
 }
 
 h4{
@@ -23,6 +36,8 @@ h4{
   width: 15% ;
   font-size: 25px;
   align-items: center;
+
+
 }
 
 .align-logos{
