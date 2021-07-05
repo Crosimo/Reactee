@@ -1,37 +1,43 @@
-import React from 'react';
+import React, { Component } from "react";
 
-export default function Organisation (){
+class Organisatiion extends Component {
    
-   return(
-<div>
-    <div>
-        <button>filtre</button>
-        <button>filtre</button>
-    </div>
-<table >
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-  </tr>
-</table>
-</div>
-
-
-   )
+    render() {
+        console.log(this.props.myInputs);
+    return (
+        <div>
+            <div>
+                  <button>filtre</button>
+                  <button>filtre</button>
+            </div>
+            <table>
+            <tbody>
+                  <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                  </tr>
+            {
+                this.props.myInputs.map((element) => {
+                    console.log(element);
+                    return (
+                <React.Fragment >
+               
+                  <tr key = {Math.round()}>
+                    <td>{ element.myInputUsername }</td>
+                    <td>{ element.myInputTaskname}</td>
+                    <td>{  }</td>
+                  </tr>
+                  
+                
+             </React.Fragment>
+                )})  
+                    }
+            </tbody>
+            </table>
+         </div>
+    );
+  }
 }
+
+export default Organisatiion;

@@ -8,25 +8,26 @@ import clockNavbar from '../icon-horloge.png';
 export default function Navbar (){
   return (
 
-    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
-    <div class="logoContainer">
-      <img src={clockNavbar} class="logo"/>
+    <nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+    <div className="logoContainer">
+      <img src={clockNavbar} className="logo"/>
       </div>  
-    <div class="container-fluid w-50 ">
-    <a class="nav-link text-light mr-5" href="#" >Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <div className="container-fluid w-50 ">
+    <a className="nav-link text-light mr-5" href="https://stackedit.io/app" >Navbar</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="https://stackedit.io/appnavbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse  w-100" id="navbarNavAltMarkup">
-      <div class="navbar-nav w-100 d-flex justify-content-around">
-        <a class="nav-link active text-light mr-2" aria-current="page" href="#">Home</a>
-        <a class="nav-link text-light mr-2" href="#">Features</a>
-        <a class="nav-link text-light mr-2" href="#">Pricing</a>
-        <a class="nav-link disabled text-light mr-2" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <div className="collapse navbar-collapse  w-100" id="navbarNavAltMarkup">
+      <div className="navbar-nav w-100 d-flex justify-content-around">
+        <a className="nav-link active text-light mr-2" aria-current="page" href="https://stackedit.io/app">Home</a>
+        <a className="nav-link text-light mr-2" href="https://stackedit.io/app">Features</a>
+        <a className="nav-link text-light mr-2" href="https://stackedit.io/app">Pricing</a>
+        <a className="nav-link disabled text-light mr-2" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
       </div>
     </div>
   </div>
-</nav>
+    </nav>
+      
   )
 }
 

@@ -24,12 +24,13 @@ export default class Footer extends Component {
                     <div className="services">
                         <h4 className="h4Footer">Company Name</h4>
                         <p className="pFooter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           
 
 
 
                         </p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                     </div>
 
@@ -38,10 +39,10 @@ export default class Footer extends Component {
                 <div className="align-logos">
 
                     <div className="logos">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-snapchat-ghost"></i>
-                        <i class="fab fa-instagram"></i>
+                        <i className="fab fa-facebook-f"></i>
+                        <i className="fab fa-twitter"></i>
+                        <i className="fab fa-snapchat-ghost"></i>
+                        <i className="fab fa-instagram"></i>
 
                     </div>
 

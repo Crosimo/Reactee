@@ -4,7 +4,7 @@ import Formulaire from "./components/Formulaire";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css";
 import Navbar from './components/Navbar'; 
-import Organisatiion from './components/Organisation';
+
 import Footer from './components/Footer';
 import Accueil from './components/Accueil';
 
@@ -30,7 +30,7 @@ class App extends Component {
   render() {
       return <div>
         <Navbar/>
-        <Organisatiion/>
+        
           <Formulaire></Formulaire>
           <AccueilBody Uti={ this.state.Utilisateurs }/>
           <Accueil />
