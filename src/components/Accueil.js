@@ -22,7 +22,7 @@ export default class Accueil extends Component {
                 <div className="displayP">
 
                 <div>
-                <p className="pAcc">dfg</p>
+                <p className="pAcc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                
 
 
@@ -33,7 +33,7 @@ export default class Accueil extends Component {
 
                 <div className="displayBtn">
 
-                <button>Sign up for free</button>
+                <button className="btnSign">Sign up for free</button>
 
                 </div>
 

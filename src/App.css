@@ -6,7 +6,6 @@
   background-attachment: fixed;
   background-position: right top;
   height: 100vh;
-  
 }
 
 .manageDisplay{
@@ -22,19 +21,37 @@ text-align: center;
   
 }
 
+
 .pAcc{
   color: white;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  font-size: 20px;
 }
 
 .displayP{
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 3%;
 }
 
 .displayBtn{
+  display: flex;
+  justify-content: center;
 
 }
 
+.btnSign{
+  background-color: #EA8C55;
+  padding: 5px;
+  border-radius: 5px;
+
+}
 /* Footer */
 
 .footer{
