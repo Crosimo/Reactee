@@ -2,9 +2,11 @@ nav{
     background-color: #C75146;
     
     
+    
 }
 .logoContainer{
     width: 10%;
+    
     
 }
 
@@ -15,10 +17,10 @@ nav{
 /* Accueil */
 .back{
 
-  background-image: url("./components/pexels-fauxels-3182773.jpg");
+  background-image: url("./components/test.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position:  top ;
+  background-position:  left ;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -142,4 +144,9 @@ i{
 .corporation{
   margin-top: 20px;
   color: rgb(179, 179, 179);
+}
+
+.navbar{
+  font-family: Dosis;
+  font-size: 1.5rem;
 }
