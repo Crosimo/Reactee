@@ -8,22 +8,34 @@
 }
 .contenu{
  width : 20%;
- height: 50%;
+ height: 55%;
  display: flex;
  flex-direction: column;
  justify-content: space-between;
  align-items: center;
+ background-color: #C75146;
+ padding: 2rem;
 }
 .myInput{
     width: 10rem;
+    height: 1.5rem;
+    border: none;
 }
 .myLabel{
     color: white;
+    width: 10rem;
 }
 .myButton{
    background-color: #AD2E24 ; 
    border: none;
    width: 50%;
-   padding: 0.25rem;
+   padding-top: 0.45rem;
+   padding-bottom: 0.5rem;
+   height: 1.75rem;
    color: white;
+   font-weight: bolder;
+}
+.leForm{
+  display: flex;
+  justify-content: center;  
 }

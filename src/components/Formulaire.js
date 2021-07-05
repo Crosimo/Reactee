@@ -8,25 +8,48 @@ class Formulaire extends Component {
         myInputHourStart: "",
         myInputHourEnd :"",
     }
+    inputRenderer(prop, value) {
+        console.log(value);
+        this.setState((prev) => {
+            return {
+                ...prev,
+               [prop] : value
+            }
+        })
+    }
+    submitter(e) {
+        e.preventdefault();
+    }
     render() {
+        console.log(this.state.myInputDate);
         return (
             <section >
-                <form>
+                <form className={classes.leForm} onSubmit= {(e)=>this.submitter}>
                     <div className = {classes.contenant}>
                         <div className={classes.contenu}>
                             <label className={classes.myLabel}>UserName</label>
-                            <input className ={classes.myInput} type="text" placeholder="User"></input>
+                            <input onInput={(e) => {
+                                this.inputRenderer("myInputUsername", e.target.value)
+                            }} className ={classes.myInput} type="text" placeholder="User"></input>
                             <label className={classes.myLabel}>Name of Task</label>
-                            <input className ={classes.myInput} type="text" placeholder="Task"></input>
+                            <input onInput={(e) => {
+                                this.inputRenderer("myInputTaskname", e.target.value)
+                            }}  className ={classes.myInput} type="text" placeholder="Task"></input>
                             <label className={classes.myLabel}>Date</label>
-                            <input className ={classes.myInput} type="date" placeholder=""></input>
+                            <input onInput={(e) => {
+                                this.inputRenderer("myInputDate", e.target.value)
+                            }} className ={classes.myInput} type="date" placeholder=""></input>
                         </div>
                         <div className={classes.contenu}>
                             <label className={classes.myLabel}>Starting Hour</label>
-                            <input className ={classes.myInput} type="time" placeholder=""></input>
+                            <input onInput={(e) => {
+                                this.inputRenderer("myInputHourStart", e.target.value)
+                            }} className ={classes.myInput} type="time" placeholder=""></input>
                             <label className={classes.myLabel}>End Hour</label>
-                            <input className ={classes.myInput} type="time" placeholder=""></input>
-                            <button className ={classes.myButton}>Submit</button>
+                            <input onInput={(e) => {
+                                this.inputRenderer("myInputHourEnd", e.target.value)
+                            }} className ={classes.myInput} type="time" placeholder=""></input>
+                            <button type= "submit" className ={classes.myButton}>Submit</button>
                         </div>
                     </div>
                     

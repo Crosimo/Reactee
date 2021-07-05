@@ -7,14 +7,20 @@ class AccueilBody extends Component {
             if (elem.pseudo === Utilisateurs && elem.mdp === Password) {
             console.log  ("you did it");   
             } else {
-                console.log ("you didn't")
+                this.setState((prev) => {
+                    return {
+                        ...prev,
+                        alerter: true
+                    }
+                })
             }
         })
     }
     state = {
         myUtiInputValue: "",
         myPassInputValue: "",
-        truth : true
+        truth: true,
+        alerter : false
     }
     timer(e) {
         let timing;
@@ -56,7 +62,8 @@ class AccueilBody extends Component {
                                 }
                         })}} value = {this.state.myPassInputValue} className={styles.lesInputs} placeholder="PassWord" type= "password"></input>
                  
-                       <button  disabled = {this.state.truth} onClick={() => { this.checker(this.state.myUtiInputValue, this.state.myPassInputValue ) }} className={ this.state.truth? `${styles.leButton} ${styles.leButtonGrey}`:`${styles.leButton} ${styles.leButtonRed}`}>LOGIN</button>
+                        <button disabled={this.state.truth} onClick={() => { this.checker(this.state.myUtiInputValue, this.state.myPassInputValue) }} className={this.state.truth ? `${styles.leButton} ${styles.leButtonGrey}` : `${styles.leButton} ${styles.leButtonRed}`}>LOGIN</button>
+                        {this.state.alerter ? <p style={{ margin: 0, color: "red", position: "absolute", bottom: "-2.5rem", fontWeight: "bolder"}}> Attention, votre identifiant ou mdp ne sont pas corrects</p> : ""}
                     </div>
                 </div>
             </section>
