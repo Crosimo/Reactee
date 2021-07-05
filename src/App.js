@@ -1,21 +1,35 @@
+import React, { Component } from "react";
+import AccueilBody from "./components/AccueilBody";
+import Formulaire from "./components/Formulaire";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css";
 import Navbar from './components/Navbar'; 
 import Organisatiion from './components/Organisation';
-
-
-function App() {
-  return (
-    <div>
-     <Navbar/>
-     <Organisatiion/>
-
-    
-    
-
-
-    </div>
-  );
+class componentName extends Component {
+  state = {
+    Utilisateurs: [
+      {
+        pseudo: "Jean",
+        mdp: "1234",
+      },
+      {
+        pseudo: "Nasila",
+        mdp: "5678",
+      },
+      {
+        pseudo: "Kevin",
+        mdp: "9012",
+      },
+    ],
+  };
+  render() {
+      return <div>
+        <Navbar/>
+        <Organisatiion/>
+          <Formulaire></Formulaire>
+          <AccueilBody Uti={ this.state.Utilisateurs }/>
+    </div>;
+  }
 }
 
-export default App;
+export default componentName;
