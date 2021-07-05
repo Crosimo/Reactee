@@ -1,0 +1,38 @@
+.footer{
+  background-color: #540804;
+  
+  
+}
+
+.troisTitres{
+  display: flex;
+  justify-content: space-around;
+  color: grey;
+  padding: 20px;
+  
+}
+
+h4{
+  color: white;
+}
+
+.logos{
+  color:#EA8C55;
+  display: flex;
+  justify-content: space-between;
+  width: 15% ;
+  font-size: 25px;
+  align-items: center;
+}
+
+.align-logos{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.corporation{
+  margin-top: 20px;
+  color: rgb(179, 179, 179);
+}
