@@ -1,0 +1,52 @@
+.laSection{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #540804;
+}
+.contenant{
+    width: 30%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 14rem;
+    position: relative;
+
+}
+.lesInputs{
+    height: 3rem;
+    background-color: #F1F1F1;
+    border: none;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+.leButton{
+    height: 3rem;
+    color: white;
+    border: none;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.leButtonGrey{
+background-color: grey;
+}
+.leButtonRed{
+background-color: #AD2E24;
+}
+.leButton:active{
+    background-color: #540804;
+  
+}

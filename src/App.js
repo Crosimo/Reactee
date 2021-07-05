@@ -1,20 +1,44 @@
+import React, { Component } from "react";
+import AccueilBody from "./components/AccueilBody";
+import Formulaire from "./components/Formulaire";
 import './App.css';
-import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/css/bootstrap.css";
+import Navbar from './components/Navbar'; 
+import Organisatiion from './components/Organisation';
 import Footer from './components/Footer';
 import Accueil from './components/Accueil';
 
 
-function App() {
-  return (
-    <div>
-     
 
-    
-    
-    <Accueil />
-    <Footer />
-    </div>
-  );
+class App extends Component {
+  state = {
+    Utilisateurs: [
+      {
+        pseudo: "Jean",
+        mdp: "1234",
+      },
+      {
+        pseudo: "Nasila",
+        mdp: "5678",
+      },
+      {
+        pseudo: "Kevin",
+        mdp: "9012",
+      },
+    ],
+  };
+  render() {
+      return <div>
+        <Navbar/>
+        <Organisatiion/>
+          <Formulaire></Formulaire>
+          <AccueilBody Uti={ this.state.Utilisateurs }/>
+          <Accueil />
+        <Footer />
+    </div>;
+  }
+
 }
+
 
 export default App;
