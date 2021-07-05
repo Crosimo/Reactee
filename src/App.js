@@ -1,6 +1,7 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css"
 import Footer from './components/Footer';
+import Accueil from './components/Accueil';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
     
     
-
+    <Accueil />
     <Footer />
     </div>
   );

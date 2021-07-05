@@ -1,3 +1,42 @@
+/* Accueil */
+.back{
+
+  background-image: url("./components/pexels-fauxels-3182773.jpg");
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  background-position: right top;
+  height: 100vh;
+  
+}
+
+.manageDisplay{
+display: flex;
+justify-content: center;
+text-align: center;
+}
+.manage{
+  margin-top: 5%;
+  color: white;
+  font-size: 60px;
+
+  
+}
+
+.pAcc{
+  color: white;
+}
+
+.displayP{
+  display: flex;
+  justify-content: center;
+}
+
+.displayBtn{
+
+}
+
+/* Footer */
+
 .footer{
   background-color: #540804;
   
@@ -20,12 +59,12 @@ i{
 
 }
 
-p{
+.pFooter{
   cursor: pointer;
 
 }
 
-h4{
+.h4Footer{
   color: white;
 }
 
