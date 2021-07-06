@@ -29,10 +29,13 @@ class App extends Component {
   };
   render() {
       return <div>
+        
         <Navbar User={this.state.Utilisateurs}/>
-            <Accueil/>
-          <Formulaire></Formulaire>
-          <AccueilBody Uti={ this.state.Utilisateurs }/>
+           { localStorage.getItem("loggedIn") === "true" ? 
+          <Formulaire /> : <React.Fragment>
+            <Accueil /> <AccueilBody Uti={ this.state.Utilisateurs }/>
+          </React.Fragment> 
+          }
         <Footer />
     </div>;
   }
