@@ -24,12 +24,16 @@ class Formulaire extends Component {
         })
 
     }
+    componentDidMount() {
+        JSON.parse(localStorage.getItem("tableau")) ||  localStorage.setItem("tableau", JSON.stringify([]))
+    }
     submitter(e) {
-       console.log("okay");
-        this.myInputsTogether.push(this.state)
+        let tab = JSON.parse(localStorage.getItem("tableau"))
+        tab.push(this.state);
+        localStorage.setItem("tableau", JSON.stringify(tab))
         this.setState((prev) => {
             return {
-                ...prev,
+                ...prev
             }
         })
     }
