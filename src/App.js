@@ -30,10 +30,10 @@ class App extends Component {
   render() {
       return <div>
         <Navbar/>
+          <Accueil />
         
           <Formulaire></Formulaire>
           <AccueilBody Uti={ this.state.Utilisateurs }/>
-          <Accueil />
         <Footer />
     </div>;
   }

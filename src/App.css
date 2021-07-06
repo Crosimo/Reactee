@@ -1,14 +1,35 @@
 nav{
-    background-color: #C75146;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.781), #020202e1); */
+     background-image: url("../src/components/Black-Background-Pics.jpg");
+    background-position: top  ;
+    /* opacity: 0.9; */
+    box-shadow: 5px 2px 5px rgba(255, 255, 255, 0.253);
     
     
     
+    
+  
 }
+
+nav a{
+  font-family: Nunito Sans ;
+  color: black; 
+  
+}
+
+nav a:hover{
+  font-family: Nunito Sans ;
+  border-bottom: solid black 2px;
+}
+
+
+
 .logoContainer{
     width: 10%;
     
-    
 }
+
+
 
 .logo{
     width: 50%;
@@ -27,7 +48,7 @@ nav{
 }
 
 .carre{
-  background-color: #ad2d24cb;
+  background-color: #521a17ad;
  width: 50%;
  border-radius: 15px;
  margin-left: 25%;
@@ -45,7 +66,8 @@ text-align: center;
   font-size: 60px;
   text-decoration: underline;
   text-shadow: 1px 2px black;
-  font-family: Dosis;
+  font-family: Shadows Into Light;
+  font-size: 60px
   
 
   
@@ -60,8 +82,9 @@ text-align: center;
   justify-content: center;
   align-items: center;
   margin-left: 25%;
-  font-size: 20px;
-  font-family: Dosis;
+  font-size: 19px;
+  font-family: Nunito Sans ;
+
 }
 
 .displayP{
@@ -86,6 +109,7 @@ text-align: center;
   border-radius: 5px;
   margin-top: 1%;
   margin-bottom: 5%;
+  font-family: Nunito Sans ;
 
 }
 /* Footer */
@@ -124,7 +148,7 @@ i{
 }
 
 .logos{
-  color:#EA8C55;
+  color:rgb(221, 182, 182);
   display: flex;
   justify-content: space-between;
   width: 15% ;
