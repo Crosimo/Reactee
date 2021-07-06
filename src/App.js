@@ -29,7 +29,7 @@ class App extends Component {
   };
   render() {
       return <div>
-        <Navbar/>
+        <Navbar User={this.state.Utilisateurs}/>
         
           <Formulaire></Formulaire>
           <AccueilBody Uti={ this.state.Utilisateurs }/>

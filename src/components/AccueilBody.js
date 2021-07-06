@@ -1,11 +1,39 @@
 import React, { Component } from 'react';
 import styles from "./AccueilBody.module.css"
 class AccueilBody extends Component {
+    
+    state={
+        
+    }
+    
+    changeColori(){
+        document.querySelector("i").style.color="green";
+        
+    }
+    storage(arg){
+       let a =  localStorage.setItem('user',arg)
+         console.log(a);
+
+    }
+     loggedin(){
+          let b = localStorage.getItem('user')
+           document.querySelectorAll("a")[4].textContent=`Bienvenue ${b}`
+           document.querySelectorAll("a")[4].style.color="green";
+
+         ;
+        
+     }
+    
     checker(Utilisateurs, Password) {
         
         this.props.Uti.find((elem) => {
             if (elem.pseudo === Utilisateurs && elem.mdp === Password) {
-            console.log  ("you did it");   
+            console.log  ("you did it");  
+            this.changeColori()
+            this.storage(elem.pseudo) 
+            this.loggedin()
+            
+
             } else {
                 this.setState((prev) => {
                     return {
