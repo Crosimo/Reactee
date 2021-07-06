@@ -1,9 +1,12 @@
 .myTd{
   width: 10%;
   border: 1px solid black;
-  background-color: #F1F1F1 ;
-
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: rgba(173, 46, 36, 0.85) ;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+  box-shadow: 2px 2px 2px rgba(173, 46, 36, 0.55);
+  border: 1px solid white;
   padding: 0.5rem;
 }
 .myTable{
@@ -15,4 +18,8 @@
 .controleur{
     display: flex;
     justify-content: center;
+    
+}
+.myTh{
+    text-align: center;
 }
