@@ -5,8 +5,13 @@ class AccueilBody extends Component {
         
         this.props.Uti.find((elem) => {
             if (elem.pseudo === Utilisateurs && elem.mdp === Password) {
-            console.log  ("you did it");   
+               return "you did it";
+                 
             } else {
+                this.setState(({
+                    myUtiInputValue: "",
+                    myPassInputValue:""
+                }))  
                 this.setState((prev) => {
                     return {
                         ...prev,
@@ -15,6 +20,7 @@ class AccueilBody extends Component {
                 })
             }
         })
+       
     }
     state = {
         myUtiInputValue: "",
@@ -22,12 +28,12 @@ class AccueilBody extends Component {
         truth: true,
         alerter : false
     }
-    timer(e) {
+    timer(propri,e) {
         let timing;
         this.setState((prev) =>  {
             return {
                 ...prev,
-                myUtiInputValue : e.target.value
+                [propri] : e.target.value.trim()
             }
             
         })
@@ -50,17 +56,13 @@ class AccueilBody extends Component {
                 <div className={styles.contenant}>
                     <div className= {styles.contenu}>
                         <input value={this.state.myUtiInputValue} onInput={(e) => {
-                            this.timer(e)
+                            this.timer("myUtiInputValue",e)
                             }} className={styles.lesInputs} placeholder="UserName" type= "text"></input>
                     
                         
                         <input onInput={(e) => {
-                            this.setState((prev) =>  {
-                                return {
-                                    ...prev,
-                                    myPassInputValue : e.target.value
-                                }
-                        })}} value = {this.state.myPassInputValue} className={styles.lesInputs} placeholder="PassWord" type= "password"></input>
+                            this.timer("myPassInputValue",e)
+                            }} value = {this.state.myPassInputValue} className={styles.lesInputs} placeholder="PassWord" type= "password"></input>
                  
                         <button disabled={this.state.truth} onClick={() => { this.checker(this.state.myUtiInputValue, this.state.myPassInputValue) }} className={this.state.truth ? `${styles.leButton} ${styles.leButtonGrey}` : `${styles.leButton} ${styles.leButtonRed}`}>LOGIN</button>
                         {this.state.alerter ? <p style={{ margin: 0, color: "red", position: "absolute", bottom: "-2.5rem", fontWeight: "bolder"}}> Attention, votre identifiant ou mdp ne sont pas corrects</p> : ""}
