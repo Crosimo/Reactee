@@ -22,4 +22,13 @@
 }
 .myTh{
     text-align: center;
+    background-color: #81171B ;
+    color: white;
+}
+
+.mySpeTr{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: red;
 }

@@ -3,12 +3,19 @@ import styles from "./Organisatiions.module.css"
 class Organisatiion extends Component {
     
     render() {
+       
         console.log(this.props.myInputs);
-    return (
+        return (
+        <React.Fragment>
+        {localStorage.getItem('checker') && <div className = {styles.mySpeTr}>
+                    Tous les champs doivent être remplis !
+        </div>}
         <div className ={styles.controleur}>
            
-            <table className ={styles.myTable}>
-            <tbody className = {styles.myTableBody}>
+            <table className={styles.myTable}>
+               
+                <tbody className={styles.myTableBody}>
+                    
                   <tr>
                     <th className ={styles.myTh}>Firstname</th>
                     <th className ={styles.myTh}>Lastname</th>
@@ -16,7 +23,7 @@ class Organisatiion extends Component {
                     <th className ={styles.myTh}>Date de fin</th>
                     <th className ={styles.myTh}>Heure de départ</th>
                     <th className ={styles.myTh}>Heure de fin</th>
-                    {/* <th className ={styles.myTh}>Temps Restant</th> */}
+                    <th className ={styles.myTh}>Temps Restant</th>
                   </tr>
             {
              JSON.parse(localStorage.getItem("tableau"))  && JSON.parse(localStorage.getItem("tableau")).map((element) => {
@@ -38,13 +45,11 @@ class Organisatiion extends Component {
                         // Encore changement requis yea, pour si minuit tu captesd
                     } else {
                        heure2 = -heure2
-                    }
-                    
+                 }
+                    heure2 -= 1
+                    let sec = 59;
                     console.log(diffDays, heure1, heure2);
-                    let timi = () => {
-                        
-                       
-                     }
+                   
                     return (
                 
                
@@ -55,7 +60,7 @@ class Organisatiion extends Component {
                     <td   className ={styles.myTd}>{ element.myInputDateEnd }</td>
                     <td   className ={styles.myTd}>{ element.myInputHourStart }</td>
                     <td  className={styles.myTd}>{element.myInputHourEnd}</td>
-                    {/* <td> { }  </td> */}
+                    <td className={styles.myTd}> {`${diffDays} Jours ${Math.abs(heure1)}Heures ${Math.abs(heure2)} Min ${sec} Secondes restantes` }  </td>
                   </tr>
                   
                 
@@ -65,8 +70,9 @@ class Organisatiion extends Component {
              
             </tbody>
             </table>
-         </div>
-    );
+            </div>
+            </React.Fragment>
+);
   }
 }
 
