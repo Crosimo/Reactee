@@ -20,7 +20,7 @@ class Organisatiion extends Component {
                     <th>Age</th>
                   </tr>
             {
-                JSON.parse(localStorage.getItem("tableau")).map((element) => {
+               this.props.myInputs.map((element) => {
                     console.log(element);
                     return (
                 <React.Fragment >
@@ -33,7 +33,7 @@ class Organisatiion extends Component {
                   
                 
              </React.Fragment>
-                )})  
+              )})  
                     }
             </tbody>
             </table>

@@ -28,10 +28,22 @@ class Formulaire extends Component {
         })
 
     }
+
+    componentDidMount(){
+
+        // this.myInputsTogether.push(this.state)
+
+        localStorage.setItem("vraiTableau", JSON.stringify(this.myInputsTogether))
+
+        
+        
+    }
+
     submitter(e) {
        console.log("okay");
-        this.myInputsTogether.push(this.state)
-        localStorage.setItem("tableau", JSON.stringify(this.myInputsTogether))
+       JSON.parse(localStorage.getItem("vraiTableau"))
+    
+        
         this.setState((prev) => {
             return {
                 ...prev,
