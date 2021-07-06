@@ -6,7 +6,26 @@ import clockNavbar from '../icon-horloge.png';
 
 class Navbar extends React.Component {
   
-  
+  statut(){
+
+    document.querySelector("i").style.color="white";
+    console.log("hey")
+
+    document.querySelectorAll("a")[4].textContent=`LOG IN/OUT`
+
+
+    this.setState({
+      
+      
+
+    })
+
+  }
+
+  state = {
+
+
+  }
 
   render() {
     return (
@@ -28,7 +47,7 @@ class Navbar extends React.Component {
         <a className="nav-link disabled text-light mr-2" href="#" tabIndex="-1" aria-disabled="true">LOG IN/OUT</a>
 
       </div>
-      <i class="fas fa-user-alt"></i>
+      <i onClick={this.state} class="fas fa-user-alt"></i>
     </div>
   </div>
     </nav>
