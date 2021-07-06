@@ -1,5 +1,5 @@
 import React from 'react';
-import clockNavbar from '../icon-horloge.png';
+import clockNavbar from '../components/clock-white.png';
 
 
 
@@ -22,7 +22,7 @@ export default function Navbar (){
         <a className="nav-link active text-light mr-2" aria-current="page" href="https://stackedit.io/app">Home</a>
         <a className="nav-link text-light mr-2" href="https://stackedit.io/app">Features</a>
         <a className="nav-link text-light mr-2" href="https://stackedit.io/app">Pricing</a>
-        <a className="nav-link disabled text-light mr-2" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
+        <a className="nav-link  text-light mr-2" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
       </div>
     </div>
   </div>
