@@ -1,6 +1,6 @@
 import React from 'react';
 import clockNavbar from '../icon-horloge.png';
-import render from 'dom-serializer';
+
 
 
 
