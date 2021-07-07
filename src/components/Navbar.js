@@ -6,7 +6,24 @@ import clockNavbar from '../icon-horloge.png';
 
 class Navbar extends React.Component {
   
+  state = {
   
+  
+  }
+
+  statut(it){
+    
+    let dragon = ""
+    localStorage.setItem("loggedIn","false")
+
+    it.setState({
+      
+      
+
+    })
+
+  }
+
 
   render() {
     return (
@@ -25,10 +42,10 @@ class Navbar extends React.Component {
         <a className="nav-link text-light mr-2" href="https://stackedit.io/app">Features</a>
         <a className="nav-link text-light mr-2" href="https://stackedit.io/app">Pricing</a>
         
-        <a className="nav-link disabled text-light mr-2" href="#" tabIndex="-1" aria-disabled="true">LOG IN/OUT</a>
+        <a className="nav-link disabled text-light mr-2" href="#" tabIndex="-1" aria-disabled="true" > {localStorage.getItem("loggedIn") === "true" ? `Bienvenu ${localStorage.getItem("user")}`: `LOG IN/OUT` }</a>
 
       </div>
-      <i class="fas fa-user-alt"></i>
+      <i onClick={this.statut.bind(this)} style={localStorage.getItem("loggedIn") === "true" ? {color:"green"}:{color:"white"} } class="fas fa-user-alt"></i>
     </div>
   </div>
     </nav>
