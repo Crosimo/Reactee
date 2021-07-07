@@ -13,7 +13,7 @@ class Navbar extends React.Component {
 
   statut(it){
     
-
+    let dragon = ""
     localStorage.setItem("loggedIn","false")
 
     it.setState({
